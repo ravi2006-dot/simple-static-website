@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Static Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://images.pexels.com/photos/2344613/pexels-photo-2344613.jpeg?cs=srgb&dl=pexels-korhan-erdol-1123380-2344613.jpg&fm=jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">✯ ArtisianAura</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to ArtisianAura</h1>
+        <p>Your one-stop solution for everything</p>
+    </section>
+
+    <section class="content">
+        <h2>About Us</h2>
+        <p>ArtisanAura is a celebration of heritage, creativity, and craftsmanship. We are dedicated to bringing traditional artistry into the modern world by combining age-old techniques with innovative designs. Each product we create is more than just an item—it’s a testament to the skill, passion, and history of the artisans behind it.
+
+            Our mission is to preserve the legacy of traditional crafts while empowering skilled artisans to share their talent with the world. By working closely with craftsmen and women, we ensure fair practices, sustainable sourcing, and unparalleled quality in every piece we offer. At ArtisanAura, we believe in the beauty of handmade creations and their power to connect us to cultures, stories, and emotions. Whether it’s a meticulously carved wooden sculpture, a handwoven textile, or a uniquely designed piece of jewelry, each item carries with it a piece of history and a promise of authenticity.
+            
+            Join us in honoring the spirit of craftsmanship and experiencing the artistry that defines ArtisanAura.
+            
+            </p>
+        <img src="https://images.stockcake.com/public/9/c/c/9cc00a38-4634-4f90-91be-5bfb9a0d9587_large/artistic-pottery-creation-stockcake.jpg" alt="Placeholder Image">
+    </section>
+
+    <footer>
+        &copy; 2024 ArtisianAura. All rights reserved.
+    </footer>
+</body>
+</html>
